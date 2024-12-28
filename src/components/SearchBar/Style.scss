@@ -1,0 +1,28 @@
+.searchBar {
+  max-width: 300px;
+  border:1px solid transparent;
+  border-radius: 1000px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchicon {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  color: #888;
+}
+
+.searchBar input {
+  width: 100%;
+  padding: 8px 10px 8px 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  &:focus{
+    border-color:$primary-color;
+  }
+}

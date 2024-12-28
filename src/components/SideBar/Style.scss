@@ -1,0 +1,106 @@
+// Aside styling
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22%;
+  height: 100vh;  
+  color: $icon-color;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      border-radius: 5px;
+      color: $icon-color;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color:#8468d1;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .icon {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+
+      .text {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+aside .logo {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  h1{
+    color: black;
+    span{
+      color:$primary-color;
+    }
+  }
+}
+
+.text.active {
+  background-color: $primary-color;
+  color: white; 
+}
+
+
+aside .ExitButton {
+  color: $icon-color;
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  cursor: pointer; 
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; 
+  
+  &:hover {
+    transition: all 0.5s ease;
+    color: $delete-color;
+  }
+
+  .ExitIcon {
+    transform: rotate(180deg);
+    width:20px;
+  }
+
+  .ExitText {
+    width: auto;
+  }
+
+  &:hover .ExitText {
+    display: inline-block; 
+  }
+}
